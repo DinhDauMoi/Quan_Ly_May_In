@@ -10,7 +10,7 @@ class sua_may_in extends Model
 {
     use HasFactory, SoftDeletes;
     protected $table = 'sua_may_in';
-    protected $fillable =[
+    protected $fillable = [
         'id_may_in_sua',
         'kho',
         'ngay_bao_hong', //ngày báo hỏng
@@ -21,6 +21,6 @@ class sua_may_in extends Model
     ];
     public function sua_may_in()
     {
-        return $this->belongsTo(Kho::class, 'kho');
+        return $this->belongsTo(kho::class, 'kho');
     }
 }

@@ -18,6 +18,6 @@ class muc_in extends Model
     ];
     public function muc_in()
     {
-        return $this->belongsTo(Kho::class, 'kho');
+        return $this->belongsTo(kho::class, 'kho');
     }
 }

@@ -20,6 +20,6 @@ class sua_muc_in extends Model
     ];
     public function sua_muc_in()
     {
-        return $this->belongsTo(Kho::class, 'kho');
+        return $this->belongsTo(kho::class, 'kho');
     }
 }

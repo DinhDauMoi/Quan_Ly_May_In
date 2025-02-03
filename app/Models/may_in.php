@@ -18,7 +18,7 @@ class may_in extends Model
     ];
     public function may_in()
     {
-        return $this->belongsTo(Kho::class, 'kho');
+        return $this->belongsTo(kho::class, 'kho');
     }
     public function may_in_sua()
     {
